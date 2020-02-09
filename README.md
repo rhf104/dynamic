@@ -1,4 +1,4 @@
-Dynamic reloading part of a C program while running.
+Shared library-based hot reloading in C
 
 Convenient for rapid prototyping of C applications.
 
