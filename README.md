@@ -1,4 +1,4 @@
-Shared library-based hot reloading in C
+Dynamic shared library-based hot reloading in C.
 
 Convenient for rapid prototyping of C applications.
 
