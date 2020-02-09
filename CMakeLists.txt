@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.12)
-project(dynamic C)
+project(convec C)
 
-set(CMAKE_C_STANDARD 99)
+set(CMAKE_CXX_STANDARD C99)
 
-add_library(dynamic_share SHARED lib.c)
-add_executable(dynamic main.c)
+add_library(convec SHARED lib.c)
+add_executable(convec_test convec.c test.c)
