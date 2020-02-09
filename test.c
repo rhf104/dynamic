@@ -5,7 +5,7 @@
 
 int main() {
     State state;
-    Convec cv = ConvecInit("libconvec.dylib", "loop", &state,
+    Convec cv = ConvecInit("libloop.dylib", "loop", &state,
                            1000000);
     do {
         ConvecRunAndUpdate(&cv);
