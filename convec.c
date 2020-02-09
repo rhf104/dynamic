@@ -38,7 +38,6 @@ Convec ConvecInit(const char *libPath, const char *funcName, void *state,
                   int waitCycles) {
     void *lib = loadLib(libPath);
     return (Convec) {
-            .quit = false,
             .libPath = libPath,
             .fileId = fileId(libPath),
             .lib = lib,
@@ -65,8 +64,3 @@ void ConvecRunAndUpdate(Convec *cv) {
         }
     }
 }
-
-bool ConvecIsRunning(Convec *cv) {
-    return !cv->quit;
-}
-

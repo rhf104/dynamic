@@ -1,3 +1,4 @@
 typedef struct {
-   char msg[256];
+    bool quit;
+    char msg[256];
 } State;

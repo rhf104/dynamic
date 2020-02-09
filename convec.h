@@ -2,7 +2,6 @@
 
 typedef struct Convec Convec;
 struct Convec {
-    bool quit;
     void *lib;
     const char *libPath;
     __darwin_ino_t fileId;
@@ -16,4 +15,3 @@ struct Convec {
 Convec ConvecInit(const char *libPath, const char *funcName, void *state,
                   int waitCycles);
 void ConvecRunAndUpdate(Convec *cv);
-bool ConvecIsRunning(Convec *cv);
